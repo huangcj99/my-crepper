@@ -130,4 +130,5 @@ co(function *() {
 ```
 
 这里用到cj大大的co函数来控制异步，而co则是运用ES6的promise和generator来实现的，koa1
-的中间件机制底层则是用co实现的，当然koa2已经可以用ES7的async与await了。
+的中间件机制底层则是用co实现的，当然koa2已经可以用ES7的async与await了。我的大体代码逻辑如上，
+关于具体实现可自行clone。
