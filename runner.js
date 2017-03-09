@@ -6,27 +6,33 @@
  *      {
  *          ipAddress:localhost,
  *          port:3000,
- *          database:myDatabase
+ *          database:myDatabase，
+ *          doc:myDoc
  *      }
  *
- *  传入一个需要抓取的网址
+ *  在数组中传入网页路径
  *
  *      url:"http://..."
  *
  *
- *  传入一个数据模型 schema
+ *  传入一个content
  *      {
- *          headTitle:sel1，
- *          text:sel2,
- *          imgSrc:sel3,
- *          author:sel4,
- *          time:sel5,
+ *          title:[selector1,'text'],
+ *          href:[selector2,'href']
  *          ...
  *      }
- *  传入一个content
  *
+ *  传入一个数据模型用于操作数据与存储
  *
- *  crepper(dbOption,address,schema);
+ *  let temp = new schema({
+ *      title:{
+ *          type:String
+ *      },
+ *      href:{
+ *           type:String
+ *      }
+ *  });
+ *
  *
  */
 const fs = require('fs');
